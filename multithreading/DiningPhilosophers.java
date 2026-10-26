@@ -7,7 +7,7 @@ public class DiningPhilosophers {
         Philosopher[] philosopherArray = new Philosopher[DiningServerImpl.NUM_OF_PHILS];
 
         for (int i = 0; i < DiningServerImpl.NUM_OF_PHILS; i++) {
-            philosopherArray[i] = new Philosopher(i, server);
+            philosopherArray[i] = new Philosopher(server, i);
         }
 
         for (int i = 0; i < DiningServerImpl.NUM_OF_PHILS; i++) {
