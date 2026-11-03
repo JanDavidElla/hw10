@@ -1,6 +1,6 @@
 package multithreading;
 
 public interface DiningServer {
-    public void takeForks(int philosopherId);
-    public void returnForks(int philosopherId);
+    public void takeForks(int philNumber);
+    public void returnForks(int philNumber);
 }
