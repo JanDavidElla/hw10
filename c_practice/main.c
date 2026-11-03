@@ -84,11 +84,11 @@ int main() {
     }
 
     for(int i = 0; i< NUM_PRODUCERS; i++) {
-        pthread_join(producers[i]);
+        pthread_join(producers[i], NULL);
     }
 
     for(int i = 0; i < NUM_CONSUMERS; i++) {
-        pthread_join(consumers[i]);
+        pthread_join(consumers[i], NULL);
     }
 
     printf("Total even nums consumed: %d\n", even_count);
